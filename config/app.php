@@ -178,6 +178,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // For transliterate
+        'That0n3guy\Transliteration\TransliterationServiceProvider',
+
     ],
 
     /*

@@ -18,7 +18,7 @@ class CreateCarouselTable extends Migration
             $table->string('name',100);
             $table->string('translit_name',100);
             $table->string('image',150);
-            $table->string('title',150);
+            $table->string('title',1000);
             $table->text('description');
             $table->timestamps();
         });

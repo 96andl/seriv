@@ -8,7 +8,8 @@
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "lavary/laravel-menu": "^1.6"
+        "lavary/laravel-menu": "^1.6",
+        "that0n3guy/transliteration": "2.0.x"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.3",

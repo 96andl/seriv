@@ -15,12 +15,12 @@ class SliderTableSeeder extends Seeder
             [
                 [
                     'img_name' => '6b.jpg',
-                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                     'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                     'updated_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                 ],
                 [
                     'img_name'=> '7.jpg',
-                    'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                    'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                     'updated_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                 ],
 

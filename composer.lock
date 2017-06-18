@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a04007e77c019100daa09b7944ff014",
+    "content-hash": "c917bc3734cb4bfe88de785355b154b8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1829,6 +1829,39 @@
                 "dump"
             ],
             "time": "2017-06-02T09:10:29+00:00"
+        },
+        {
+            "name": "that0n3guy/transliteration",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/that0n3guy/transliteration.git",
+                "reference": "51f2079d9c36dd1616a4a02acaf538d52f47f93a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/that0n3guy/transliteration/zipball/51f2079d9c36dd1616a4a02acaf538d52f47f93a",
+                "reference": "51f2079d9c36dd1616a4a02acaf538d52f47f93a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "That0n3guy\\Transliteration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Peter O",
+                    "email": "that0n3guy@users.noreply.github.com"
+                }
+            ],
+            "time": "2015-12-22T23:23:37+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
