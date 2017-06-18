@@ -15,6 +15,12 @@ class CreateWorkshopsCommentsTable extends Migration
     {
         Schema::create('workshops_comments', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('for_id',false, true);
+            $table->integer('ref_id',false,true);
+            $table->string('name',150);
+            $table->string('email',150);
+            $table->string('web_site',255);
+            $table->text('description');
             $table->timestamps();
         });
     }

@@ -15,6 +15,11 @@ class CreateGalleriesTable extends Migration
     {
         Schema::create('galleries', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name',255);
+            $table->string('translite_name',255);
+            $table->string('major_img',255);
+            $table->enum('category',array('Wedding','Portfolio','Portraits',
+                'Family pictures', 'Art Nude','Animals','Various'));
             $table->timestamps();
         });
     }
