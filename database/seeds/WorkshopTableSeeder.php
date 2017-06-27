@@ -17,8 +17,8 @@ class WorkshopTableSeeder extends Seeder
                 [
                     'name' => 'WORKSHOP В ТАШКЕНТE (УЗБЕКИСТАН) 10-11 ИЮЛЯ 2017 ГОДА.',
                     'translite_name' =>
-                        $transliteration->clean_filename('WORKSHOP В ТАШКЕНТE 
-                        (УЗБЕКИСТАН) 10-11 ИЮЛЯ 2017 ГОДА.'),
+                        strtolower($transliteration->clean_filename('WORKSHOP В ТАШКЕНТE 
+                        (УЗБЕКИСТАН) 10-11 ИЮЛЯ 2017 ГОДА.')),
 
                     'social_link' => 'http://seriv.com/',
                     'title' => 'WORKSHOP Сергея Иванова
@@ -55,7 +55,7 @@ __________________________________________________
                 [
                     'name' => 'WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.',
                     'translite_name' =>
-                        $transliteration->clean_filename('WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.'),
+                        strtolower($transliteration->clean_filename('WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.')),
 
                     'social_link' => 'http://seriv.com/',
                     'title' => 'WORKSHOP Сергея Иванова

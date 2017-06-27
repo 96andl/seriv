@@ -18,7 +18,7 @@ class CarouselTableSeeder extends Seeder
             [
                 [
                     'name' => 'belts',
-                    'translit_name' => $transliteration->clean_filename('belts'),
+                    'translit_name' => strtolower($transliteration->clean_filename('belts')),
                     'image' => 'belts-1-1200x750.jpg',
                     'title' => 'LEATHER BELTS FOR TWO CAMERAS — 200 EURO.
     INFO: UNLOADING LEATHER BELTS FOR TWO CAMERAS (TOTAL WEIGHT 20 KG).
@@ -32,7 +32,7 @@ class CarouselTableSeeder extends Seeder
                 [
 
                     'name' => 'WORKSHOP POCKET',
-                    'translit_name' => $transliteration->clean_filename('WORKSHOP POCKET'),
+                    'translit_name' => strtolower($transliteration->clean_filename('WORKSHOP POCKET')),
                     'image' => 'workshop-pocket-1200x750.jpg',
                     'title' => 'WORKSHOP POCKET
     (Part N1. Published in english. Digital version.)',
@@ -43,7 +43,7 @@ class CarouselTableSeeder extends Seeder
                 [
 
                     'name' => 'TEXTURES',
-                    'translit_name' => $transliteration->clean_filename('TEXTURES'),
+                    'translit_name' => strtolower($transliteration->clean_filename('TEXTURES')),
                     'image' => 'textures',
                     'title' => 'IN THIS COLLECTION YOU CAN FIND MY BEST TEXTURES FOR BEST VISUAL EFFECTS
 IN YOUR CREATIVE PHOTOGRAPHY.',

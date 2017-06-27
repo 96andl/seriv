@@ -3,19 +3,19 @@
     @include('templates.header')
 @endsection
 @section('slider')
-    @include('templates.slider')
+    {{--@include('templates.slider')--}}
 @endsection
 @section('carousel')
-    @include('templates.header_carousel')
+    {{--@include('templates.header_carousel')--}}
 @endsection
 @section('right_mobile_menu')
-    @include('templates.right_mobile_menu')
+    {{--@include('templates.right_mobile_menu')--}}
 @endsection
 @section('site_content')
-    @include('templates.site_content')
+    {{--@include('templates.site_content')--}}
 @endsection
 @section('media_feed_insta')
-    @include('templates.media_feed_insta')
+    {{--@include('templates.media_feed_insta')--}}
 @endsection
 @section('footer')
     @include('templates.footer')

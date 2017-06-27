@@ -11,6 +11,11 @@
 |
 */
 Route::match(['get','post'],'/','IndexController@execute')->name('home');
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
+
+Route::match(['get','post'],'galleries/{category}/{point}','GalleryController@execute')
+    ->name('gallery');
+
+Route::match(['get','post'],'/','IndexController@execute')
+    ->name('main menu');
+
+Route::get('portfolio','PortfolioController@execute')->name('portfolio');
