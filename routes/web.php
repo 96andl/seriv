@@ -19,3 +19,22 @@ Route::match(['get','post'],'/','IndexController@execute')
     ->name('main menu');
 
 Route::get('portfolio','PortfolioController@execute')->name('portfolio');
+
+Route::match(['get','post'],'wedding/{identify}',
+    array('as' => 'weddings','uses' => 'WeddingsController@execute'))->where('identify' , '[1-9a-zA-Z_-]+');
+
+Route::match(['get','post'],'love-story/{identify}',
+    array('as' => 'love story','uses' => 'LoveStoryController@execute'))->where('identify' , '[1-9a-zA-Z_-]+');
+
+
+Route::match(['get','post'], 'pictures/{identify}',
+    array('as' => 'pictures','uses' => 'PicturesController@execute'))->where('identify' , '[1-9a-zA-Z_-]+');
+
+Route::match(['get','post'],'video',['as'=>'video', 'uses' => 'VideoController@execute'])
+    ->where('identify' , '[1-9a-zA-Z_-]+');
+
+Route::match(['get','post'],'workshop-program',['as'=>'workshop program', 'uses' => 'WorkshopProgramController@execute'])
+    ->where('identify' , '[1-9a-zA-Z_-]+');
+
+Route::match(['get','post'],'contacts',['as' =>'contacts','uses'=>'ContactsController@execute'])
+    ->where('identify' , '[1-9a-zA-Z_-]+');;

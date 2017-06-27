@@ -17,8 +17,8 @@
 
     <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/seriv.com\/","name":"Seriv","potentialAction":{"@type":"SearchAction","target":"http:\/\/seriv.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
     <!-- / Yoast SEO plugin. -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel='dns-prefetch' href='http://s.w.org/' />
     <link rel="alternate" type="application/rss+xml" title="Seriv &raquo; Лента" href="feed/index.html" />
@@ -38,23 +38,23 @@
             padding: 0 !important;
         }
     </style>
-    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel='stylesheet' id='contact-form-7-css'  href='css/styles4906.css?ver=4.7' type='text/css' media='all' />
-    <link rel='stylesheet' id='vls-gf-style-css'  href='css/styleac40.css?ver=34fe845367dba0412c0a4afe51bd70ad' type='text/css' media='all' />
-    <link rel='stylesheet' id='rs-plugin-settings-css'  href='css/settings9cbc.css?ver=4.6.93' type='text/css' media='all' />
+    <link href="{{asset('css/materialdesignicons.min.css')}}" media="all" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' id='contact-form-7-css'  href='{{asset("css/styles4906.css?ver=4.7")}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='vls-gf-style-css'  href='{{asset("css/styleac40.css?ver=34fe845367dba0412c0a4afe51bd70ad")}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css'  href='{{asset("css/settings9cbc.css?ver=4.6.93")}}' type='text/css' media='all' />
     <style id='rs-plugin-settings-inline-css' type='text/css'>
         .tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
     </style>
-    <link rel='stylesheet' id='woocommerce-layout-css'  href='css/woocommerce-layout41fe.css?ver=3.0.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='css/woocommerce-smallscreen41fe.css?ver=3.0.1' type='text/css' media='only screen and (max-width: 768px)' />
-    <link rel='stylesheet' id='woocommerce-general-css'  href='css/woocommerce41fe.css?ver=3.0.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='wp-pagenavi-css'  href='wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'  href='{{asset("css/woocommerce-layout41fe.css?ver=3.0.1")}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='{{asset("css/woocommerce-smallscreen41fe.css?ver=3.0.1")}}' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'  href='{{asset("css/woocommerce41fe.css?ver=3.0.1")}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-pagenavi-css'  href='{{asset('wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='mondo-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen+Sans%3A400%2C600%2C700&amp;ver=34fe845367dba0412c0a4afe51bd70ad' type='text/css' media='all' />
-    <link rel='stylesheet' id='mondo-woocommerce-css'  href='/css/woocommerce4b1d.css?ver=1.8' type='text/css' media='all' />
-    <link rel='stylesheet' id='mondo-style-css'  href='css/style4b1d.css?ver=1.8' type='text/css' media='all' />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
-    <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
+    <link rel='stylesheet' id='mondo-woocommerce-css'  href='{{"css/woocommerce4b1d.css?ver=1.8"}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='mondo-style-css'  href='{{asset("css/style4b1d.css?ver=1.8")}}' type='text/css' media='all' />
+    <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
+    <script type='text/javascript' src='{{asset("js/jquery-migrate.min330a.js?ver=1.4.1")}}'></script>
+    <script type='text/javascript' src='{{asset("js/jqueryb8ff.js?ver=1.12.4")}}'></script>
     <!--    <script type='text/javascript' src='/js/jquery.themepunch.tools.min9cbc.js?ver=4.6.93'></script>-->
     <!--    <script type='text/javascript' src='js/jquery.themepunch.revolution.min9cbc.js?ver=4.6.93'></script>-->
     <link rel='https://api.w.org/' href='wp-json/index.html' />
@@ -218,12 +218,13 @@
     </nav>
     <div class="site-overlay"></div>
 
-    <div id="content" class="site-content container">
         {{--contentStart--}}
             @yield('site_content')
         {{--contentEnd --}}
-    </div>
 
+        {{--galleryStart--}}
+            @yield('gallery')
+        {{--galleryEnd--}}
 
     <div id="mondo-media-feed" class="instagram container">
         {{--mediaFeedStart--}}
@@ -247,52 +248,52 @@
 
 <!--Site Optimized to Enhancer and Modernizer IE WordPress Surfing Experience-->
 
-<script type='text/javascript' src='js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript' src='{{asset("js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20")}}'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var _wpcf7 = {"recaptcha":{"messages":{"empty":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442."}}};
     /* ]]> */
 </script>
-<script type='text/javascript' src='js/scripts4906.js?ver=4.7'></script>
+<script type='text/javascript' src='{{asset("js/scripts4906.js?ver=4.7")}}'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_url":"http:\/\/seriv.com\/?page_id=701","is_cart":"","cart_redirect_after_add":"no"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='js/.min41fe.js?ver=3.0.1'></script>
-<script type='text/javascript' src='js/jquery.blockUI.min44fd.js?ver=2.70'></script>
-<script type='text/javascript' src='js/js.cookie.min4c71.js?ver=2.1.3'></script>
+<script type='text/javascript' src='{{asset("js/.min41fe.js?ver=3.0.1")}}'></script>
+<script type='text/javascript' src='{{asset("js/jquery.blockUI.min44fd.js?ver=2.70")}}'></script>
+<script type='text/javascript' src='{{asset("js/js.cookie.min4c71.js?ver=2.1.3")}}'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='js/woocommerce.min41fe.js?ver=3.0.1'></script>
+<script type='text/javascript' src='{{asset("js/woocommerce.min41fe.js?ver=3.0.1")}}'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='js/cart-fragments.min41fe.js?ver=3.0.1'></script>
-<script type='text/javascript' src='js/skip-link-focus-fix08e0.js?ver=20130115'></script>
-<script type='text/javascript' src='js/ie9-fix4b1d.js?ver=1.8'></script>
-<script type='text/javascript' src='js/velocity.min8d1e.js?ver=1.2.2'></script>
-<script type='text/javascript' src='js/pushy.min067c.js?ver=0.9.2'></script>
-<script type='text/javascript' src='js/waves.min42da.js?ver=0.6.3'></script>
-<script type='text/javascript' src='js/jquery.fitvidsf488.js?ver=1.1.0'></script>
-<script type='text/javascript' src='js/jquery.flexslider.minc141.js?ver=2.6.1'></script>
-<script type='text/javascript' src='js/owl.carousel.min001e.js?ver=2.0.0'></script>
-<script type='text/javascript' src='js/retina.min6f3e.js?ver=1.3.0'></script>
-<script type='text/javascript' src='js/enquire.min431f.js?ver=2.1.2'></script>
-<script type='text/javascript' src='js/skrollr.min7bd6.js?ver=0.6.29'></script>
-<script type='text/javascript' src=js/jquery.stellar.min343b.js?ver=0.6.2'></script>
+<script type='text/javascript' src='{{asset("js/cart-fragments.min41fe.js?ver=3.0.1")}}'></script>
+<script type='text/javascript' src='{{asset("js/skip-link-focus-fix08e0.js?ver=20130115")}}'></script>
+<script type='text/javascript' src='{{asset("js/ie9-fix4b1d.js?ver=1.8")}}'></script>
+<script type='text/javascript' src='{{asset("js/velocity.min8d1e.js?ver=1.2.2")}}'></script>
+<script type='text/javascript' src='{{asset("js/pushy.min067c.js?ver=0.9.2")}}'></script>
+<script type='text/javascript' src='{{asset("js/waves.min42da.js?ver=0.6.3")}}'></script>
+<script type='text/javascript' src='{{asset("js/jquery.fitvidsf488.js?ver=1.1.0")}}'></script>
+<script type='text/javascript' src='{{asset("js/jquery.flexslider.minc141.js?ver=2.6.1")}}'></script>
+<script type='text/javascript' src='{{asset("js/owl.carousel.min001e.js?ver=2.0.0")}}'></script>
+<script type='text/javascript' src='{{asset("js/retina.min6f3e.js?ver=1.3.0")}}'></script>
+<script type='text/javascript' src='{{asset("js/enquire.min431f.js?ver=2.1.2")}}'></script>
+<script type='text/javascript' src='{{asset("js/skrollr.min7bd6.js?ver=0.6.29")}}'></script>
+<script type='text/javascript' src='{{asset("js/jquery.stellar.min343b.js?ver=0.6.2")}}'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var params = {"is_mobile":"","site_url":"http:\/\/seriv.com","admin_url":"http:\/\/seriv.com\/wp-admin\/admin-ajax.php","nonce":"a172a4450b","love_title":"Click to love this post.","unlove_title":"You have already loved this post. Click again to unlove it.","feature_column":"3","enable_feature_arrow":"0"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='js/functions4b1d.js?ver=1.8'></script>
-<script type='text/javascript' src='js/wp-embed.minac40.js?ver=34fe845367dba0412c0a4afe51bd70ad'></script>
+<script type='text/javascript' src='{{asset("js/functions4b1d.js?ver=1.8")}}'></script>
+<script type='text/javascript' src='{{asset("js/wp-embed.minac40.js?ver=34fe845367dba0412c0a4afe51bd70ad")}}'></script>
 
 </body>
 

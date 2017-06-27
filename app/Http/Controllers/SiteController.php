@@ -27,7 +27,7 @@ class SiteController extends Controller
      */
     protected function renderOutput() {
 
-        !isset($this->content) ?: array_push($this->array['content'],$this->content);
+        !isset($this->content) ?: $this->array['content'] = $this->content;
         !isset($this->menu) ?: $this->array['menu'] = $this->menu;
         !isset($this->footer) ?: $this->array['footer'] = $this->footer;
 
