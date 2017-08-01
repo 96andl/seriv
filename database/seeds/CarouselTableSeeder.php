@@ -51,7 +51,7 @@ IN YOUR CREATIVE PHOTOGRAPHY.',
     After receiving the money, i will send the textures to your e-mail.
     You can send the money by Money Transfer System «WESTERN UNION»
     («WESTERN UNION» is a money transfer system it is safe and comfortable.
-    you need to go to the bank , the «WESTERN UNION» system is wide spread and you can find it in any bank)
+    you need to go to the bank , the «WESTERN UNION» system is wide spread and you can find it in tarasivanna_kiev bank)
     (my data only: Ivanov Sergey, Ukraine, Kiev, Shumskogo 5, 255. tel: +380632680883)
     Please to inform me that you have sent the money. Please send me the screenshot the code «WESTERN UNION»',
                     'created_at' => Carbon\Carbon::now()->format('Y-m-d H:i:s'),

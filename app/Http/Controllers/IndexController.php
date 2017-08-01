@@ -6,6 +6,7 @@ use App\Carousel;
 use App\Gallerie;
 use App\GallerieComment;
 use App\Repository\Footer;
+use App\Repository\MainContent;
 use App\Slider;
 use App\Workshop;
 use Illuminate\Http\Request;
@@ -20,6 +21,9 @@ class IndexController extends SiteController
     }
 
     public function execute() {
+
+        $this->content = (new MainContent())->getMainContent();
+
         $this->template = 'layouts.main';
 
         return $this->renderOutput();

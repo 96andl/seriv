@@ -17,7 +17,7 @@ class WorkshopTableSeeder extends Seeder
                 [
                     'name' => 'WORKSHOP В ТАШКЕНТE (УЗБЕКИСТАН) 10-11 ИЮЛЯ 2017 ГОДА.',
                     'translite_name' =>
-                        strtolower($transliteration->clean_filename('WORKSHOP В ТАШКЕНТE 
+                        str_slug($transliteration->clean_filename('WORKSHOP В ТАШКЕНТE 
                         (УЗБЕКИСТАН) 10-11 ИЮЛЯ 2017 ГОДА.')),
 
                     'social_link' => 'http://seriv.com/',
@@ -48,6 +48,7 @@ https://www.facebook.com/hojiakbar.zaidov
 http://seriv.com/russian-edition/
 __________________________________________________
 Портфолио и информация по WORKSHOP в других городах — seriv.com',
+                    'teaching_language' => 'русский',
                     'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                     'updated_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')
                 ],
@@ -55,7 +56,7 @@ __________________________________________________
                 [
                     'name' => 'WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.',
                     'translite_name' =>
-                        strtolower($transliteration->clean_filename('WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.')),
+                        str_slug($transliteration->clean_filename('WORKSHOP В ТБИЛИСИ (ГРУЗИЯ) 3-4 ИЮЛЯ 2017 ГОДА.')),
 
                     'social_link' => 'http://seriv.com/',
                     'title' => 'WORKSHOP Сергея Иванова
@@ -85,6 +86,7 @@ FB: https://facebook.com/karlito.photography
 http://seriv.com/russian-edition/
 __________________________________________________
 Портфолио и информация по WORKSHOP в других городах — seriv.com',
+                    'teaching_language' => 'русский',
                     'created_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s'),
                     'updated_at' => \Carbon\Carbon::now()->format('Y-m-d H:i:s')
                 ],

@@ -19,7 +19,7 @@ class CreateGalleriesTable extends Migration
             $table->string('translite_name',255);
             $table->string('major_img',255);
             $table->enum('category',array('Wedding','Love Story','Portraits',
-                'Family pictures', 'Art Nude','Animals','Various'));
+                'Family pictures', 'Art Nude','Animals','Various','Portfolio'));
             $table->timestamps();
         });
     }

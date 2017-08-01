@@ -23,7 +23,8 @@
     <link rel='dns-prefetch' href='http://s.w.org/' />
     <link rel="alternate" type="application/rss+xml" title="Seriv &raquo; Лента" href="feed/index.html" />
     <link rel="alternate" type="application/rss+xml" title="Seriv &raquo; Лента комментариев" href="comments/feed/index.html" />
-
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -48,16 +49,18 @@
     <link rel='stylesheet' id='woocommerce-layout-css'  href='{{asset("css/woocommerce-layout41fe.css?ver=3.0.1")}}' type='text/css' media='all' />
     <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='{{asset("css/woocommerce-smallscreen41fe.css?ver=3.0.1")}}' type='text/css' media='only screen and (max-width: 768px)' />
     <link rel='stylesheet' id='woocommerce-general-css'  href='{{asset("css/woocommerce41fe.css?ver=3.0.1")}}' type='text/css' media='all' />
-    <link rel='stylesheet' id='wp-pagenavi-css'  href='{{asset('wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70')}}' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-pagenavi-css'  href='{{asset('css/pagenavi-css44fd.css?ver=2.70')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='mondo-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen+Sans%3A400%2C600%2C700&amp;ver=34fe845367dba0412c0a4afe51bd70ad' type='text/css' media='all' />
     <link rel='stylesheet' id='mondo-woocommerce-css'  href='{{"css/woocommerce4b1d.css?ver=1.8"}}' type='text/css' media='all' />
     <link rel='stylesheet' id='mondo-style-css'  href='{{asset("css/style4b1d.css?ver=1.8")}}' type='text/css' media='all' />
+    <link rel="stylesheet" href="{{asset("css/settings.css")}}" type="text/css">
     <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
     <script type='text/javascript' src='{{asset("js/jquery-migrate.min330a.js?ver=1.4.1")}}'></script>
     <script type='text/javascript' src='{{asset("js/jqueryb8ff.js?ver=1.12.4")}}'></script>
-    <!--    <script type='text/javascript' src='/js/jquery.themepunch.tools.min9cbc.js?ver=4.6.93'></script>-->
-    <!--    <script type='text/javascript' src='js/jquery.themepunch.revolution.min9cbc.js?ver=4.6.93'></script>-->
-    <link rel='https://api.w.org/' href='wp-json/index.html' />
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="{{asset("js/jquery.themepunch.plugins.min.js")}}"></script>
+    <script type="text/javascript" src='{{asset("js/jquery.themepunch.revolution.min.js")}}'></script>
+   <link rel='https://api.w.org/' href='wp-json/index.html' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 
@@ -83,6 +86,7 @@
     <script src="//ie7-js.googlecode.com/svn/trunk/lib/ie7-recalc.js"></script>
 	<script src="//ie7-js.googlecode.com/svn/trunk/lib/ie7-squish.js"></script>
     <script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+    <link rel="stylesheet" href="{{asset('css/settings-ie8.css')}}">
     <![endif]-->
     <!--[if gt IE 7]>
 
@@ -191,25 +195,22 @@
         <div id="scroll-bar-inner"></div>
     </div>
 
-    <header id="masthead" class="site-header" role="banner">
+    {{--StartHeader--}}
+    @yield('header')
+    {{--EndHeader--}}
 
-        @yield('header')
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 
-    </header>
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'><script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.minbc57.js?rev=4.6.93'></script><script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.minbc57.js?rev=4.6.93'></script>
-    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:-70px;margin-bottom:0px;max-height:570px;">
         <!-- START REVOLUTION SLIDER 4.6.93 fullwidth mode -->
             @yield('slider')
         <!-- END REVOLUTION SLIDER -->
-    </div>
 
 
-    <div id="mondo-featured-posts" class="owl-carousel">
+
         {{--CarouselStart--}}
             @yield('carousel')
         {{--CarouselEnd--}}
-    </div>
 
     <nav class="pushy pushy-right">
         {{--right-mobile-menu-start--}}
@@ -260,7 +261,6 @@
     var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_url":"http:\/\/seriv.com\/?page_id=701","is_cart":"","cart_redirect_after_add":"no"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='{{asset("js/.min41fe.js?ver=3.0.1")}}'></script>
 <script type='text/javascript' src='{{asset("js/jquery.blockUI.min44fd.js?ver=2.70")}}'></script>
 <script type='text/javascript' src='{{asset("js/js.cookie.min4c71.js?ver=2.1.3")}}'></script>
 <script type='text/javascript'>
@@ -282,7 +282,6 @@
 <script type='text/javascript' src='{{asset("js/waves.min42da.js?ver=0.6.3")}}'></script>
 <script type='text/javascript' src='{{asset("js/jquery.fitvidsf488.js?ver=1.1.0")}}'></script>
 <script type='text/javascript' src='{{asset("js/jquery.flexslider.minc141.js?ver=2.6.1")}}'></script>
-<script type='text/javascript' src='{{asset("js/owl.carousel.min001e.js?ver=2.0.0")}}'></script>
 <script type='text/javascript' src='{{asset("js/retina.min6f3e.js?ver=1.3.0")}}'></script>
 <script type='text/javascript' src='{{asset("js/enquire.min431f.js?ver=2.1.2")}}'></script>
 <script type='text/javascript' src='{{asset("js/skrollr.min7bd6.js?ver=0.6.29")}}'></script>
@@ -293,9 +292,13 @@
     /* ]]> */
 </script>
 <script type='text/javascript' src='{{asset("js/functions4b1d.js?ver=1.8")}}'></script>
+<script type="text/javascript" src='{{asset("js/owl.carousel.min.js")}}'></script>
 <script type='text/javascript' src='{{asset("js/wp-embed.minac40.js?ver=34fe845367dba0412c0a4afe51bd70ad")}}'></script>
-
+<script type="text/javascript"  src="{{asset("js/instafeed.min.js")}}"></script>
+<script type="text/javascript" src="{{asset("js/myscript.js")}}"></script>
 </body>
 
 <!-- Mirrored from seriv.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jun 2017 12:45:07 GMT -->
 </html>
+
+

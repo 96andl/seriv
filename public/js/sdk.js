@@ -7,7 +7,7 @@
  * copy, modify, and distribute this software in source code or binary form for use
  * in connection with the web services and APIs provided by Facebook.
  *
- * As with any software that integrates with the Facebook platform, your use of
+ * As with tarasivanna_kiev software that integrates with the Facebook platform, your use of
  * this software is subject to the Facebook Platform Policy
  * [http://developers.facebook.com/policy/]. This copyright notice shall be
  * included in all copies or substantial portions of the software.

@@ -6844,7 +6844,7 @@ namespace Illuminate\Support\Facades {
          * Sets a callable able to create a Request instance.
          * 
          * This is mainly useful when you need to override the Request class
-         * to keep BC with an existing system. It should not be used for any
+         * to keep BC with an existing system. It should not be used for tarasivanna_kiev
          * other purpose.
          *
          * @param callable|null $callable A PHP callable
@@ -7024,7 +7024,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Gets a "parameter" value from any bag.
+         * Gets a "parameter" value from tarasivanna_kiev bag.
          * 
          * This method is mainly useful for libraries that want to provide some flexibility. If you don't need the
          * flexibility in controllers, it is better to explicitly get request parameters from the appropriate
@@ -7071,7 +7071,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Whether the request contains a Session object.
          * 
-         * This method does not give any information about the state of the session object,
+         * This method does not give tarasivanna_kiev information about the state of the session object,
          * like whether the session is started or not. It is just a way to check if this Request
          * is associated with a Session instance.
          *
@@ -13275,7 +13275,7 @@ namespace {
         }
         
         /**
-         * Determine if any rows exist for the current query.
+         * Determine if tarasivanna_kiev rows exist for the current query.
          *
          * @return bool 
          * @static 

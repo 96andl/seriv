@@ -9,7 +9,7 @@ return [
     |
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
+    | tarasivanna_kiev other location as required by the application or its packages.
     */
 
     'name' => env('APP_NAME', 'Laravel'),
@@ -73,7 +73,7 @@ return [
     |
     | The application locale determines the default locale that will be used
     | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
+    | to tarasivanna_kiev of the locales which will be supported by the application.
     |
     */
 
@@ -85,7 +85,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | The fallback locale determines the locale to use when the current one
-    | is not available. You may change the value to correspond to any of
+    | is not available. You may change the value to correspond to tarasivanna_kiev of
     | the language folders that are provided through your application.
     |
     */

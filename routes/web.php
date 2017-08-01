@@ -37,4 +37,10 @@ Route::match(['get','post'],'workshop-program',['as'=>'workshop program', 'uses'
     ->where('identify' , '[1-9a-zA-Z_-]+');
 
 Route::match(['get','post'],'contacts',['as' =>'contacts','uses'=>'ContactsController@execute'])
-    ->where('identify' , '[1-9a-zA-Z_-]+');;
+    ->where('identify' , '[1-9a-zA-Z_-]+');
+
+
+Route::get('instagram/getJson', function () {
+    $CONTENT = file_get_contents("https://www.instagram.com/andriibashuk/media/");
+    return response()->json($CONTENT,200);
+});

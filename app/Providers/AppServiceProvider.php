@@ -7,7 +7,7 @@ use DB;
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Bootstrap tarasivanna_kiev application services.
      *
      * @return void
      */
@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register any application services.
+     * Register tarasivanna_kiev application services.
      *
      * @return void
      */

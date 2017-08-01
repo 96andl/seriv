@@ -21,6 +21,7 @@ class CreateWorkshopsTable extends Migration
             $table->string('title',150);
             $table->string('image',150);
             $table->text('description');
+            $table->string('teaching_language',255);
             $table->timestamps();
         });
     }
